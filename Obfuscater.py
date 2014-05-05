@@ -10,10 +10,12 @@ def randCode():
     encode = {}
     decode = {}
     for x in range(len(char)):
-        randChar = choice(copy)
+        randChar1 = choice(char)
+        randChar2 = choice(copy)
         encode[char[x]] = randChar
         decode[randChar] = char[x]
-        copy.remove(randChar)
+        char.remove(randChar1)
+        copy.remove(randChar2)
     return (encode, decode)
     
 def loadCode(filename):
