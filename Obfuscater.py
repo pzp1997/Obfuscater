@@ -51,8 +51,6 @@ def main():
         raise SystemExit
 
     codes = loadCode("DefaultKey.txt")
-    encoder = codes[0]
-    decoder = codes[1]
     
     filename = argv[2]
     read = open(filename, "r")
@@ -62,14 +60,15 @@ def main():
     option = argv[1]
     if option == "--encode" or option == "--decode":
         if option == "--encode":
-            codedText = coder(text, encoder)
-            print "Document sucessfully encoded!"
+            codedText = coder(text, codes[0])
+            action = "encoded"
         else:
-            codedText = coder(text, decoder)
-            print "Document sucessfully decoded!"
+            codedText = coder(text, codes[1])
+            action = "decoded"
         write = open(filename, "w")
         write.write(codedText)
         write.close()
+        print "Document sucessfully " + action + "!"
     else:
         print "unknown option: " + option
         raise SystemExit
