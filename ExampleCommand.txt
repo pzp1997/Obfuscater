@@ -1,0 +1,1 @@
+python "/Users/palmerpa/Desktop/Obfuscater/Obfuscater.py" --encode "/Users/palmerpa/Desktop/Obfuscater/ExampleDocument.txt"
