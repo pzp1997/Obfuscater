@@ -1,9 +1,9 @@
 Obfuscater
 ==========
 
-<h3>Encodes and decodes .txt documents using your randomly generated, personal key.</h3>
+<h3>Encrypts .txt documents using your randomly generated, personal key.</h3>
 
-Thanks for trying out my program (it really means a lot to me). The purpose of this program is to encode and decode .txt (other document types may, or may not work… I know that .rtf doesn't) documents using your very own, randomly generated personal keys. The defualt key is generated for you the first time that you run the program (and all other keys are created using the same algorithm). This means that every user should (theoretically) have different keys, and I will not know what your keys are! If one tries to decode the document with a wrong key (or if a document was encoded with multiple keys, in the wrong order), gibberish will result! This program can encode and decode documents almost instantaneously, and no programming knowledge or downloads (other than the program itself) are required to get you up and running. Here are the steps to encode/decode a document:
+Thanks for trying out my program (it really means a lot to me). The purpose of this program is to encrypt .txt (other document types may, or may not work… I know that .rtf doesn't) documents using your very own, randomly generated personal keys. The defualt key is generated for you the first time that you run the program (and all other keys are created using the same algorithm). This means that every user should (theoretically) have different keys, and I will not know what your keys are! If one tries to decode the document with a wrong key (or if a document was encoded with multiple keys, in the wrong order), gibberish will result! This program can encode and decode documents almost instantaneously, and no programming knowledge or downloads (other than the program itself) are required to get you up and running. Here are the steps to encode/decode a document:
 
 1. Open Terminal
 2. Type in the following information: 
@@ -17,9 +17,9 @@ Thanks for trying out my program (it really means a lot to me). The purpose of t
 
 …or expressed more succinctly: ./Obfuscater.py {--encode | --decode} file.txt {key_name}
 
-For more security, you can encode a document multiple times with different keys (just remember to decode the document in the reverse order that it was encoded!).
+The technical name for the type of encryption that Obfuscater uses is a simple substitution cipher using a psuedorandomly mixed alphabet. For more security, you can encode a document multiple times (theoretically an infinite number of times) with different keys (just remember to decode the document in the reverse order that it was encoded!).
 
-NOTE: I cannot guarantee that others will not be able to decode your document. The security that Obfuscater uses is far from foolproof. So with that being said, don't use Obfuscater to protect "state secrets" or classified documents. I will not be held responsible for any damages incurred as a result of your using of Obfuscater, including if a document encoded by Obfuscater was decoded by an unintended party.
+NOTE: I cannot guarantee that others will not be able to decode your document. The security that Obfuscater uses is far from foolproof. So with that being said, don't use Obfuscater to protect "state secrets" or classified documents. I will not be held responsible for any damages incurred as a result of your using of Obfuscater, including if a document encrypted by Obfuscater was decoded by an unintended party.
 
 I hope you find this program useful! <br/>
 <strong>Palmer Paul (pzp1997)</strong>
